@@ -1,3 +1,6 @@
+body{
+    background-color: darkred;
+}
 .jumbotron{
     background-image: url(../images/bg1.cms);
     background-position: center;
@@ -12,5 +15,29 @@
 }
 #foot{
     background-color: darkred;
+
+}
+.card-body{
+    height: 900px;
+}
+#meat{
+    background-image: url(../images/meat1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#veggie{
+    background-image: url(../images/veggie.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#totals{
+    background-image: url(../images/total.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
