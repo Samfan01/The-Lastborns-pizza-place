@@ -1,5 +1,8 @@
 body{
-    background-color: darkred;
+    background-image: url(../images/veggie.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .jumbotron{
     background-image: url(../images/bg1.cms);
@@ -19,25 +22,33 @@ body{
 }
 .card-body{
     height: 900px;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    
 }
-#meat{
-    background-image: url(../images/meat1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-#veggie{
-    background-image: url(../images/veggie.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
+.card-body ul li{
+    color: black;
+    }
 #totals{
     background-image: url(../images/total.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+.card-title{
+    text-align: center;
+    font-size: 800;
+    font-weight: 700;
+    color: darkred;
+}
+.checkbox-inline{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.group{
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: 3px solid beige;
 }
