@@ -54,4 +54,7 @@ body{
 }#totals{
     color: green;
 }
+form{
+    display: none;
+}
 
