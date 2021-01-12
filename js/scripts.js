@@ -12,7 +12,9 @@ $('#take').click(function(){
     
     $('.text').text(plus)
 })
-
+$('#take2').click(function(){
+    $('form').show()
+})
 
 
 
