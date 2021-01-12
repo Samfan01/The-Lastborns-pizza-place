@@ -13,6 +13,7 @@
 
 <body>
     <div class="container-fluid">
+        <div class="col-xs-12">
         <div class="jumbotron">
             <h1>Lastborn's Pizza Place</h1>
         </div>
@@ -20,19 +21,19 @@
             <div class="card bg-warning">
                 <div class="card-body" id="meat">
                     <h3 class="card-title">MEAT LOVERS</h3>
-                    <h5 class="group">pizza size</h5>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Regular</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Medium</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Large</label>
+                    <h5 class="group">Pizza size</h5>
+                    <label class="checkbox-inline"><input type="checkbox" id="regular" value=100 >Regular</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="medium" value=200>Medium</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="large" value=300>Large</label>
                     <h5 class="group">Choose crust</h5>
                     <ul>
                         <li>Parmesian: Regular @200,Medium @300,Large @350 </li>
                         <li>American: Regular @200,Medium @300,Large @350 </li>
                         <li>Soft: Regular @200,Medium @300,Large @350 </li>
                     </ul>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Parmesian</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">American</label>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Soft</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="parmesian" value=100>Parmesian</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="american" value=200>American</label>
+                    <label class="checkbox-inline"><input type="checkbox" id="soft" value=300>Soft</label>
                     <h5 class="group">Choose Topping</h5>
                     <ul>
                         <li>Chicken: Regular @200,Medium @300,Large @350 </li>
@@ -57,8 +58,8 @@
             <div class="card bg-success">
                 <div class="card-body" id="veggie">
                     <h3 class="card-title">VEGGETERIANS</h3>
-                    <h5 class="group">pizza size</h5>
-                    <label class="checkbox-inline"><input type="checkbox" value="">Regular</label>
+                    <h5 class="group">Pizza size</h5>
+                    <label class="checkbox-inline"><input type="checkbox" value="400" >Regular</label>
                     <label class="checkbox-inline"><input type="checkbox" value="">Medium</label>
                     <label class="checkbox-inline"><input type="checkbox" value="">Large</label>
                     <h5 class="group">Choose crust</h5>
@@ -82,13 +83,30 @@
                     <button type="button" class="btn btn-primary" id="take">Add</button>
                 </div>
             </div>
-            <div class="card bg-success">
+            <div class="card ">
                 <div class="card-body" id="totals">
                     <h3 class="card-title">TOTALS</h3>
-                    <p class="card-text">Some text inside the third card</p>
+                    <h4>Price Total:<span class="text"></span></h4>
+                    <h3 class="card-title">Delivery</h3>
+                    <ul>
+                        <li>Delivery @ 150</li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" id="take2">Deliver</button>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Telephone:</label>
+                          <input type="number" class="form-control" placeholder="Enter number" id="pwd">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
                 </div>
             </div>
 
+        </div>
         </div>
         <footer id="foot">
             <div class="row">

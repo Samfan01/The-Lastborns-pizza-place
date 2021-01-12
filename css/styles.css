@@ -51,4 +51,7 @@ body{
     font-weight: 700;
     font-size: larger;
     border-bottom: 3px solid beige;
+}#totals{
+    color: green;
 }
+
