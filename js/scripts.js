@@ -9,8 +9,12 @@ $('#take').click(function(){
     var sof=$('#soft').val()
     var plus=parseInt(reg)
     var plus1=parseInt(sof)
-    
-    $('.text').text(plus)
+    var pizza=$('#sel1').val()
+    if(pizza===reg){
+        par=100
+        
+    }
+    $('.text').text(reg+par)
 })
 $('#take2').click(function(){
     $('form').show()
