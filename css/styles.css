@@ -17,8 +17,9 @@ body{
       color: darkred;
 }
 #foot{
-    background-color: darkred;
-
+    background-color: rgb(35, 65, 35);
+    text-align: center;
+    padding: 40px;
 }
 .card-body{
     height: 1050px;
