@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/veggie.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/veggie.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,9 +17,17 @@ body{
       color: darkred;
 }
 #foot{
-    background-color: rgb(35, 65, 35);
     text-align: center;
-    padding: 40px;
+    color: lawngreen;
+}
+.icons{
+    display: flex;
+    justify-content: inherit;
+    margin-left: 35%;
+    margin-right:35%;
+    padding: 20px;
+    color: lawngreen;
+    
 }
 .card-body{
     height: 1050px;
