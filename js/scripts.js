@@ -63,7 +63,7 @@ $(document).ready(function () {
         var pizzaTopping = parseInt($('#topping1').val());
         var pizzaExtra = parseInt($('#extras1').val());
         var pizzaTotal = parseInt(pizzaSize) + parseInt(pizzaCrust) + parseInt(pizzaTopping) + parseInt(pizzaExtra);
-
+        var plus=pizzaTotal+150;
         var newPizza = new Regular(pizzaSize, pizzaCrust, pizzaTopping, pizzaExtra);
         var totalAmount = 0;
         for (let i = 0; i < order.length; i++) {
@@ -74,7 +74,8 @@ $(document).ready(function () {
             + pizzaTopping + '<br>' + newPizza.Regularextras() + " " + pizzaExtra + "<br>" + "Total:" + pizzaTotal + '<br>' +
             'Total Amount ' + totalAmount + "</span></li>")
             alert(newPizza.Regularsize() + " " + newPizza.Regulartopping() + ' pizza'+ ' @' + pizzaTotal)
-    });
+            $('.text').text(plus)
+        });
     function Veggy(size, crust, extras) {
         this.size = size;
         this.crust = crust;
@@ -119,17 +120,15 @@ $(document).ready(function () {
         var pizzaCrust1 = parseInt($('#crust2').val());
         var pizzaExtra1 = parseInt($('#extra1').val());
         var pizzaTotal1 = pizzaSize1 + pizzaCrust1 + pizzaExtra1
-
+        var plus1=pizzaTotal1+150;
         var newPizza1 = new Veggy(pizzaSize1, pizzaCrust1, pizzaExtra1)
 
         $('ul#list').append("<li><span class='contact'>" + newPizza1.Veggysize() + " " + pizzaSize1 +
             '<br>' + newPizza1.Veggycrust() + ' ' + pizzaCrust1 + '<br>' + newPizza1.Veggyextras() + " " + pizzaExtra1 + "<br>" + "Total:" + pizzaTotal1 + "</span></li>")
         alert(newPizza1.Veggysize() + " Veggy pizza with " + newPizza1.Veggycrust() + ' @' + pizzaTotal1)
-
+        $('.text').text(plus1)
     });
-    $('#take2').click(function () {
-       
-        // $('.text').text(plus)
+    $('#take2').click(function () { 
         $('form').show()
     })
     $('#sub').click(function () {
