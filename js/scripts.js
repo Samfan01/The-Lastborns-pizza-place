@@ -8,22 +8,50 @@ $(document).ready(function () {
 
     };
     Regular.prototype.Regularsize = function () {
-        Regular.size == 500
-        return 'Pizza Size'
+        if (this.size == 500) {
+            return 'Small';
+        }
+        if (this.size == 700) {
+            return 'Medium';
+        }
+        if (this.size ==900) {
+            return 'Large';
+        }
 
     }
     Regular.prototype.Regularcrust = function () {
-        Regular.crust === 100
-        return 'Pizza Crust'
+        if (this.crust== 100) {
+            return 'American';
+        }
+        if (this.crust == 200) {
+            return 'Parmesian';
+        }
+        if (this.crust==150) {
+            return 'Soft';
+        }
 
     }
     Regular.prototype.Regulartopping = function () {
-        Regular.topping == 100
-        return 'Pizza topping'
+        if (this.topping == 200) {
+            return 'Chicken';
+        }
+        if (this.topping == 150) {
+            return 'Beef';
+        }
+        if (this.topping ==100) {
+            return 'Bacon';
+        }
     }
     Regular.prototype.Regularextras = function () {
-        Regular.extras == 50
-        return 'Pizza extra'
+        if (this.extras == 100) {
+            return 'Extra-Meat';
+        }
+        if (this.extras == 50) {
+            return 'Extra-Cheese';
+        }
+        if (this.extras == 60) {
+            return 'Extra-Sauce';
+        }
     }
 
     $('#take').click(function (event) {
@@ -49,16 +77,38 @@ $(document).ready(function () {
             this.extras = extras;
     }
     Veggy.prototype.Veggysize = function () {
-        Veggy.size == 400
-        return 'regular'
+        if (this.size == 400) {
+            return 'Small';
+        }
+        if (this.size == 550) {
+            return 'Medium';
+        }
+        if (this.size == 700) {
+            return 'Large';
+        }
     }
     Veggy.prototype.Veggycrust = function () {
-        Veggy.crust == 200
-        return 'Parmesian'
+        if (this.crust== 100) {
+            return 'American';
+        }
+        if (this.crust == 200) {
+            return 'Parmesian';
+        }
+        if (this.crust==150) {
+            return 'Soft';
+        }
     }
     Veggy.prototype.Veggyextras = function () {
-        Veggy.extras == 50
-        return 'Pizza extra'
+        if (this.extras == 100) {
+            return 'Extra-Olives';
+        }
+        if (this.extras == 50) {
+            return 'Extra-Cheese';
+        }
+        if (this.extras == 60) {
+            return 'Extra-Sauce';
+        }
+       
     }
     $('#take1').click(function () {
         var pizzaSize1 =parseInt($('#sel2').val());
