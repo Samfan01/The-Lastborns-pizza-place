@@ -10,12 +10,12 @@ $(document).ready(function () {
     Regular.prototype.Regularsize = function () {
         Regular.size == 500
         return 'Pizza Size'
-    
+
     }
     Regular.prototype.Regularcrust = function () {
-        Regular.crust===100
+        Regular.crust === 100
         return 'Pizza Crust'
-        
+
     }
     Regular.prototype.Regulartopping = function () {
         Regular.topping == 100
@@ -41,22 +41,45 @@ $(document).ready(function () {
             + pizzaTopping + '<br>' + newPizza.Regularextras() + " " + pizzaExtra + "<br>" + "Total:" + pizzaTotal + "</span></li>")
 
 
-        $('.text').text( +pizzaTotal)
+        $('.text').text(+pizzaTotal)
     })
+    function Veggy(size, crust, extras) {
+            this.size = size;
+            this.crust = crust;
+            this.extras = extras;
+    }
+    Veggy.prototype.Veggysize = function () {
+        Veggy.size == 400
+        return 'regular'
+    }
+    Veggy.prototype.Veggycrust = function () {
+        Veggy.crust == 200
+        return 'Parmesian'
+    }
+    Veggy.prototype.Veggyextras = function () {
+        Veggy.extras == 50
+        return 'Pizza extra'
+    }
     $('#take1').click(function () {
-        var pizza1 = $('#sel2').val()
+        var pizzaSize1 =parseInt($('#sel2').val());
+        var pizzaCrust1 = parseInt($('#crust2').val());
+        var pizzaExtra1 = parseInt($('#extra1').val());
+        var pizzaTotal1 = pizzaSize1+pizzaCrust1+pizzaExtra1
 
+        var newPizza1 = new Veggy(pizzaSize1,pizzaCrust1,pizzaExtra1)
 
+        $('ul#list').append("<li><span class='contact'>" + newPizza1.Veggysize() + " " + pizzaSize1 +
+        '<br>' + newPizza1.Veggycrust() + ' ' + pizzaCrust1 + '<br>' + newPizza1.Veggyextras() + " " + pizzaExtra1 + "<br>" + "Total:" + pizzaTotal1 + "</span></li>")
+        alert(pizzaSize1)
 
-        $('.text').text(pizza1)
     });
     $('#take2').click(function () {
         $('form').show()
     })
-    $('#sub').click(function(){
-        var customer=$('#name').val()
-        var home=$('#address').val()
-        alert("Thank you "+customer+" your order will be delivered to "+home+" in a few minutes!")
+    $('#sub').click(function () {
+        var customer = $('#name').val()
+        var home = $('#address').val()
+        alert("Thank you " + customer + " your order will be delivered to " + home + " in a few minutes!")
     })
 
 
