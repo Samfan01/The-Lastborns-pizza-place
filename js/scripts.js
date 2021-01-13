@@ -12,7 +12,7 @@ $(document).ready(function () {
     };
     Regular.prototype.Regularsize = function () {
         if (this.size == 500) {
-            return 'Small';
+            return 'Regular';
         }
         if (this.size == 700) {
             return 'Medium';
@@ -83,7 +83,7 @@ $(document).ready(function () {
     }
     Veggy.prototype.Veggysize = function () {
         if (this.size == 400) {
-            return 'Small';
+            return 'Regular';
         }
         if (this.size == 550) {
             return 'Medium';
