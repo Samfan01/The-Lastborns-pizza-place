@@ -9,23 +9,21 @@ $(document).ready(function () {
     };
     Regular.prototype.Regularsize = function () {
         Regular.size == 500
-        return 'regular'
+        return 'Pizza Size'
     
     }
     Regular.prototype.Regularcrust = function () {
-        Regular.crust === 200
-            return 'American'
-       Regular.crust===100
-            return 'Parmesian'
+        Regular.crust===100
+        return 'Pizza Crust'
         
     }
     Regular.prototype.Regulartopping = function () {
         Regular.topping == 100
-        return 'Bacon'
+        return 'Pizza topping'
     }
     Regular.prototype.Regularextras = function () {
         Regular.extras == 50
-        return 'Extra cheese'
+        return 'Pizza extra'
     }
 
     $('#take').click(function (event) {
@@ -43,7 +41,7 @@ $(document).ready(function () {
             + pizzaTopping + '<br>' + newPizza.Regularextras() + " " + pizzaExtra + "<br>" + "Total:" + pizzaTotal + "</span></li>")
 
 
-        $('.text').text(pizza)
+        $('.text').text( +pizzaTotal)
     })
     $('#take1').click(function () {
         var pizza1 = $('#sel2').val()
