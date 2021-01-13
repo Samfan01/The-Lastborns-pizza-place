@@ -120,13 +120,13 @@ $(document).ready(function () {
         var pizzaCrust1 = parseInt($('#crust2').val());
         var pizzaExtra1 = parseInt($('#extra1').val());
         var pizzaTotal1 = pizzaSize1 + pizzaCrust1 + pizzaExtra1
-
+        var plus1=pizzaTotal1+150;
         var newPizza1 = new Veggy(pizzaSize1, pizzaCrust1, pizzaExtra1)
 
         $('ul#list').append("<li><span class='contact'>" + newPizza1.Veggysize() + " " + pizzaSize1 +
             '<br>' + newPizza1.Veggycrust() + ' ' + pizzaCrust1 + '<br>' + newPizza1.Veggyextras() + " " + pizzaExtra1 + "<br>" + "Total:" + pizzaTotal1 + "</span></li>")
         alert(newPizza1.Veggysize() + " Veggy pizza with " + newPizza1.Veggycrust() + ' @' + pizzaTotal1)
-
+        $('.text').text(plus1)
     });
     $('#take2').click(function () { 
         $('form').show()
