@@ -125,7 +125,7 @@ $(document).ready(function () {
 
         $('ul#list').append("<li><span class='contact'>" + newPizza1.Veggysize() + " " + pizzaSize1 +
             '<br>' + newPizza1.Veggycrust() + ' ' + pizzaCrust1 + '<br>' + newPizza1.Veggyextras() + " " + pizzaExtra1 + "<br>" + "Total:" + pizzaTotal1 + "</span></li>")
-        alert(newPizza1.Veggysize() + " Veggy pizza with " + newPizza1.Veggycrust() + ' @' + pizzaTotal1)
+        alert(newPizza1.Veggysize() + " Veggy pizza with " + newPizza1.Veggycrust()+' crust ' + ' @' + pizzaTotal1)
         $('.text').text(plus1)
     });
     $('#take2').click(function () { 
